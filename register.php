@@ -35,7 +35,7 @@
         $stmt->execute([$username]);
         $arr = $stmt->fetch(PDO::FETCH_ASSOC);
         if(!$arr) exit('No rows');
-       echo "<br>";
+        echo "<br>";
         print_r($arr);
        
         $pdo = null;
