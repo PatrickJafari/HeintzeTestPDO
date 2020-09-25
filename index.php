@@ -10,24 +10,23 @@
             $("#loginForm").show();
             $("#registerForm").hide();
 
-            $( "#register" ).click(function() {
+            $( "a #register" ).click(function() {
                 $("#loginForm").hide();
                 $("#registerForm").fadeIn(500);
             });
 
-            $( "#login").click(function() {
+            $( "a #login").click(function() {
                 $("#registerForm").hide();
                 $("#loginForm").fadeIn(500);
-               
             });
         });
-    </script>
+        </script>
     </head>
 
     <body>
 
-    <div id="register">Register</div>
-    <div id="login">Login</div>
+    <a href="#"><div id="register">Register</div></a>
+    <a href="#"><div id="login">Login</div></a>
 
     <div id="loginForm">
         <form action="login.php" method="post">
@@ -39,6 +38,7 @@
             <input type="submit" value="Submit">
         </form>
     </div>
+
     <div id="registerForm">
         <form action="register.php" method="post">
         <h1>Register</h1>
@@ -49,5 +49,6 @@
             <input type="submit" value="Submit">
         </form>
     </div>
+
     </body>
 </html>
