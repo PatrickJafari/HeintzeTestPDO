@@ -3,8 +3,8 @@
     <head>
         <meta charset="utf-8">
         <title>Login</title>
-        <link rel="stylesheet" href="style.css">
-        <script src="jquery/jquery-3.5.1.min.js"></script>
+        <link rel="stylesheet" href="src/style.css">
+        <script src="src/jquery-3.5.1.min.js"></script>
         <script>
         $(document).ready(function() {
             $("#loginForm").show();
@@ -26,16 +26,7 @@
 
     <body>
         
-    <?php
-    require("dbconfig.php");
 
-    $stmt = $pdo->prepare("SELECT Username FROM userverwaltung WHERE Username = ?");
-    $stmt->execute('Patrick');
-    $arr = $stmt->fetch(PDO::FETCH_COLUMN);
-    if(!$arr) exit('No rows');
-    var_export($arr);
-    $stmt = null;
-    ?>
 
     <div id="register">Register</div>
     <div id="login">Login</div>
