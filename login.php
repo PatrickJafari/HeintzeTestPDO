@@ -1,11 +1,15 @@
 <?php
 require('./lib/dbconfig.php');
 
-$statement =$pdo->prepare("SELECT Username FROM userverwaltung WHERE Username = ?");
+$username = $_POST['username'];
+$password = $_POST['password'];
 
-$statement->execute(array('ThomasFrank'));
-while($row = $statement->fetch(PDO::FETCH_ASSOC)){
-    echo $row["Username"];
+$statement = $pdo->prepare("SELECT Username, Passwort FROM userverwaltung WHERE Username = ? AND Passwort = ?");
+
+$statement-> execute(array($username, $password));
+while($row = $statement->fetch()){
+    echo $row['Username'];
+    echo $row['Passwort'];
 }
 
 ?>
