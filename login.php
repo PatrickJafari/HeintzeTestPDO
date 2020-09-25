@@ -10,7 +10,7 @@ $password = $_POST['password'];
 
 
     if(!empty($_POST['username'] && $_POST['password'])){
-
+       
         
         $statement = $pdo->prepare("SELECT Username, Passwort FROM userverwaltung WHERE Username = ? AND Passwort = md5(?)");
         $statement-> execute(array($username, $password));

@@ -14,7 +14,7 @@ if(isset($_SESSION['username']))
 
 } 
 
-if((time() - $login_timestamp) > 10){
+if((time() - $login_timestamp) > 300){
     header("location: ./logout.php");
 } 
 
