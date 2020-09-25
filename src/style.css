@@ -52,3 +52,10 @@ input {
     padding: 20px;
     text-align: center;
 }
+
+#register:hover, #login:hover {
+    border: 1px solid #000;
+    color: #ddd;
+    background-color: #3a3a3a;
+    text-align: center;
+}

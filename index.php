@@ -15,7 +15,7 @@
                 $("#registerForm").fadeIn(500);
             });
 
-            $( "#login" ).click(function() {
+            $( "#login").click(function() {
                 $("#registerForm").hide();
                 $("#loginForm").fadeIn(500);
                
