@@ -5,6 +5,7 @@
     <title>Willkommen!</title>
   </head>
   <body>
+  
     <?php
     include('./inc/session_time.php');
     if(isset($_SESSION['loggedin']) == true)

@@ -11,9 +11,7 @@ if(isset($_SESSION['username']))
     while($row = $statement->fetch()){
         $login_timestamp = $row['login_timestamp'];
     }
-    echo time();
-    echo "<br>";
-    echo $login_timestamp;
+
 } 
 
 if((time() - $login_timestamp) > 10){
