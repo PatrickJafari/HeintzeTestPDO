@@ -2,15 +2,13 @@
 <html lang="de">
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="Refresh" content="4" >
     <title>Willkommen!</title>
   </head>
   <body>
     <?php
     include('./inc/session_time.php');
     if(isset($_SESSION['loggedin']) == true)
-    {
-        
+    {    
         echo "Hallo ";
         echo $_SESSION['username'];
     } else {
