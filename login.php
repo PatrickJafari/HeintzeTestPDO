@@ -42,7 +42,11 @@ $password = $_POST['password'];
                 
                 header('Location: welcome.php');
             }
+        } else {
+            header('Location: index.php');
         }
+    } else {
+        header('Location: index.php');
     }
 
 $pdo = null;
