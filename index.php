@@ -32,7 +32,7 @@
     <div id="login">Login</div>
 
     <div id="loginForm">
-        <form action="login.php" method="get">
+        <form action="login.php" method="post">
             <h1>Login</h1>
             <label for="username">Username:</label><br>
             <input type="text" id="username" name="username" value=""><br>
@@ -42,7 +42,7 @@
         </form>
     </div>
     <div id="registerForm">
-        <form action="register.php" method="get">
+        <form action="register.php" method="post">
         <h1>Register</h1>
             <label for="username">Username:</label><br>
             <input type="text" id="username" name="username" value=""><br>
