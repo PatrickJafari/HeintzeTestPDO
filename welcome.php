@@ -1,14 +1,26 @@
-<?php
-session_start();
-require('life.pgp');
-if(isset($_SESSION['loggedin']) == true)
-{
-    echo "Hallo ";
-    echo $_SESSION['username'];
-} else {
-    header('Location: index.php');
-}
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Refresh" content="4" >
+    <title>Willkommen!</title>
+  </head>
+  <body>
+    <?php
+    include('./inc/session_time.php');
+    if(isset($_SESSION['loggedin']) == true)
+    {
+        
+        echo "Hallo ";
+        echo $_SESSION['username'];
+    } else {
+        header('Location: index.php');
+    }
 
-?>
+    ?>
 
-<a href="logout.php">logout</a>
+    <a href="logout.php">logout</a>
+  </body>
+</html>
+
+
