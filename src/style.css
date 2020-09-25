@@ -28,6 +28,10 @@ a:link {
     padding: 20px;
     width: 200px;
     border: 1px solid #000;
+
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
 }
 
 #welcome {
@@ -77,3 +81,11 @@ input {
     background-color: #3a3a3a;
     text-align: center;
 }
+
+.footer {
+    color: #fff; 
+    font-size: 14px;
+    border-top: 1px solid rgb(106, 139, 199);
+    padding-top: 10px;
+}
+    
