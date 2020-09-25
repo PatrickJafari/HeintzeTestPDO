@@ -1,5 +1,6 @@
 <?php
 session_start();
+require('life.pgp');
 if(isset($_SESSION['loggedin']) == true)
 {
     echo "Hallo ";

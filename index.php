@@ -26,8 +26,6 @@
 
     <body>
         
-
-
     <div id="register">Register</div>
     <div id="login">Login</div>
 

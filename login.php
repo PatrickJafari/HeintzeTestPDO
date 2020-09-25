@@ -18,6 +18,7 @@ $password = $_POST['password'];
             if (md5($password) == $row['Passwort']) {
 
                 $_SESSION['username'] = $row['Username'];
+                $_SESSION['time_start_login'] = time();
                 $_SESSION['loggedin'] = true;
 
                 header('Location: welcome.php');
