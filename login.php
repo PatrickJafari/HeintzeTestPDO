@@ -31,10 +31,7 @@ $password = $_POST['password'];
                     echo $ex;
                 }
 
-                // set session to timestamp
-                //$_SESSION['time_start_login'] = $time;
-
-                
+                // set session to timestamp                
                 $_SESSION['time_start_login'] = time();
                 $_SESSION['username'] = $row['Username'];
                 $_SESSION['loggedin'] = true;
