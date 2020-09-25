@@ -1,4 +1,5 @@
 <?php
+
 require('./lib/dbconfig.php');
 session_start();
 
